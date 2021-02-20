@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+
+</head>
+
+<body>
+
+    <H2>Project 1</H2>
+    <label for="x">Enter first value: </label>
+    <input type="number" id="x" >
+    <label for="y">Enter Second value: </label>
+    <input type="number" id="y" >
+    <input type="submit" value="bigger" onclick="big()">
+    <label for="y">Who is bigger : </label>
+    <input type="number" id="z" >
+
+    <Script>
+        
+        function big()
+        {
+        var num1 = document.getElementById("x").value;
+        var num2 = document.getElementById("y").value;
+
+        if (num1 > num2)
+        {
+            document.getElementById("z").value=num1;
+        }
+        else
+        {
+            document.getElementById("z").value=num2;
+        }
+
+        }
+
+    </Script>
+
+
+</body>
+
+</html>
